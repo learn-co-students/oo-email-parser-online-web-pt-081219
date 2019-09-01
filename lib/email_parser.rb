@@ -5,15 +5,14 @@
 # require "pry"
 class EmailAddressParser
   
-  # attr_accessor :parse
+  attr_accessor :email_addresses
   
   def initialize(email_addresses)
     @emails_to_parse = email_addresses
   end 
   
   def parse 
-    # binding.pry
     @emails_to_parse.split(/ |, |,/).uniq
-    # @emails_to_parse
   end 
+  
 end 
